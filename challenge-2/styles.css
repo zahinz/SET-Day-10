@@ -17,241 +17,98 @@ img {
 #container {
     height: 100%;
     width: 100%;
-
-}
-
-#progressBar {
-    height: 30px;
-    background-color: rgb(44, 44, 44);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    z-index: 10000;
-    border-radius: 0 20px 20px 0;
-}
-
-#progress {
-    color: white;
-    margin: 0 20px;
-    font-size: 0.8rem;
-}
-
-
-/* PAGE 1 */
-
-#page1 {
-    height: 100vh;
-    width: 100%;
-    /* background-color: yellow; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: relative;
+    background: rgb(202,41,62);
+    background: linear-gradient(0deg, rgba(202,41,62,1) 24%, rgb(89, 154, 197) 100%); 
     overflow: hidden;
 }
 
-
-#caption1 {
+#caption {
     position: fixed;
-    top: 25vh;
-    z-index: 100;
+    top: 15%;
+    left: 30%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
 }
 
-#caption1 h1 {
-    font-size: 10rem;
-    line-height: 0.9;
+#caption h1 {
+    font-size: 7rem;
     color: white;
-}
-
-#caption1 h3 {
-    font-size: 4rem;
-    line-height: 1.5;
-    color: rgb(75, 75, 75);
 }
 
 #caption2 {
     position: fixed;
-    top: 25vh;
-    z-index: 100;
-    opacity: 0;
+    top: 30%;
+    right: 5%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    width: 30%;
+    text-align: end;
+
 }
 
-#caption2 h1 {
-    font-size: 10rem;
-    line-height: 0.9;
+#caption2 p {
+    font-size: 1.2rem;
     color: white;
 }
 
-#caption2 h3 {
-    font-size: 4rem;
-    line-height: 1.5;
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
-    cursor: pointer;
+#caption h3 {
+    font-size: 2rem;
+    color: white;
 }
 
-
-.fade-in {
-    animation-name: fadeIn;
-    animation-duration: 500ms;
-    animation-fill-mode: both;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0.5s;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.fade-out {
-    animation-name: fadeOut;
-    animation-duration: 500ms;
-    animation-fill-mode: both;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
-
-/* IMAGE LAYERS */
-
-#layer0, #layer1, #layer2, #layer3, #layer4 {
-    width: auto;
-    position: fixed;
-}
-
-#layer0 {
-    display: block;
-    width: 500%;
-    height: 100vh;
-    top: 0;
-    left: -10%;
-    z-index: 10;
-    overflow: hidden;
+#layer1, #layer2, #layer3, #layer4, #layer5, #layer6, #layer7, #layer8{
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 #layer1 {
-    display: block;
-    width: 60%;
-    right: -10%;
-    bottom: 8vw;
-    z-index: 20;
-    opacity: 0;
-}
+
+} 
 
 #layer2 {
-    display: block;
-    width: 85%;
-    left: -5%;
-    bottom: -8vw;
-    z-index: 30;
-    opacity: 0;
-}
+    width: 176%;
+    margin-left: -38%;
+    bottom: 9%;
+} 
 
 #layer3 {
-    display: block;
-    width: 100%;
-    right: 0;
-    bottom: 0vw;
-    z-index: 40;
-    opacity: 0;
-}
+    width: 146%;
+    margin-left: -31%;
+    bottom: 14%;
+} 
 
 #layer4 {
-    display: block;
-    width: 68%;
-    left: -10%;
-    bottom: 0;
-    z-index: 50;
-    height: 553px;
-    overflow: hidden;
-    opacity: 0;
-}
+    width: 195%;
+    margin-left: -100%;
+    bottom: 6%;
+} 
 
+#layer5 {
+    width: 160%;
+    margin-left: -30%;
+    bottom: 10%;
+} 
 
+#layer6 {
+    width: 180%;
+    margin-left: -40%;
+    bottom: 11%;
+} 
 
-/* PAGE 2 */
+#layer7 {
+    width: 200%;
+    margin-left: -50%;
+    bottom: 10%;
+} 
 
-#page2 {
-    height: 100vh;
+#layer8 {
+    background-color: #2d112b;
     width: 100%;
-    background-color: green;
-}
-
-
-
-/* PAGE 3 */
-
-#page3 {
-    height: 100vh;
-    width: 100%;
-    background-color: red;
+    height: 100px;
 }
 
 
 
 
-
-@media (max-width: 375px) {
-    #layer0 {
-        display: block;
-        width: 1000%;
-        height: 101vh;
-        top: 0;
-        left: -10%;
-        z-index: 10;
-        overflow: hidden;
-    }
-    
-    #layer1 {
-        display: block;
-        width: 120%;
-        right: -38%;
-        bottom: 36vw;
-        z-index: 20;
-    }
-
-    #layer2 {
-        display: block;
-        width: 111%;
-        left: -35%;
-        bottom: 20vw;
-        z-index: 30;
-    }
-
-    #layer3 {
-        display: block;
-        width: 296%;
-        right: 0;
-        bottom: -9vw;
-        z-index: 40;
-    }
-
-    #layer4 {
-        display: block;
-        width: 157%;
-        left: -33%;
-        bottom: -68vw;
-        z-index: 50;
-        height: 553px;
-        overflow: hidden;
-    }
-
-
-}
